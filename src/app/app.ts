@@ -18,7 +18,7 @@ export class App {
     shapes:[FLOWCHART_SHAPES, BASIC_SHAPES],
     edges: {
       avoidVertices: true,
-      propertyMappings: FlowchartBasicEdgeMappings(),
+      propertyMappings: FlowchartBasicEdgeMappings({lineThickness:true}),
       allowUnattached: true,
       connector: {
         type: CONNECTOR_TYPE_ORTHOGONAL,

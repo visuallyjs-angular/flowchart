@@ -43,22 +43,7 @@ import {LINE_WIDTHS} from './constants';
         <div>Label</div>
         <input type="text" vjs-att="label"/>
       </div>
-      <div class="vjs-inspector-section">
-        <div>Line style</div>
-        <vjs-edge-type propertyName="lineStyle"/>
-      </div>
-      <div class="vjs-inspector-section">
-        <div>Markers</div>
-        <vjs-edge-type propertyName="markers"/>
-      </div>
-      <div class="vjs-inspector-section">
-        <div>Line width</div>
-        <select vjs-att="lineWidth" vjs-datatype="integer">
-          @for(lw of this.lineWidths; track lw) {
-            <option [value]="lw">{{lw}}</option>
-          }
-        </select>
-      </div>
+      <vjs-edge-properties-inspector/>
     }
   </div>`
 })
